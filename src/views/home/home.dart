@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
           onPressed: () {
             signIn(context);
           },
-          child: const Text('Google SignIn'),
+          child: const Text('Google SignIn!'),
         ),
       ),
     );
@@ -30,7 +30,7 @@ Future signIn(context) async {
   if (user == null) {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Sign in Faild'),
+        content: Text('Sign in Faild!'),
       ),
     );
   } else {
